@@ -17,7 +17,7 @@ jobs:
       -  name:
          run: |
              cd function
-             python3 -m pip install --upgrage pip
+             python -m pip install --upgrage pip
              if [ -f requirements.txt ]; then pip install -r requirements.txt -t .; fi
       -  name: Create zip bundle
          run: |
